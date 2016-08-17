@@ -1,4 +1,18 @@
 function transfer -d "Upload to transfer.sh" -a file name
+
+    getopts $argv | while read -l 1 2
+        switch "$1"
+            case h help
+                printf "Usage: transfer file name \n"
+                return
+
+            case \*
+                printf "transfer: '%s' is not a valid option\n" $1 >& 2
+                transfer --help >& 2
+                return 1
+        end
+    end
+
     set -l tmp (mktemp -t transferXXX)
 
     if test -z $name
