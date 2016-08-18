@@ -38,7 +38,7 @@ function transfer -d "Upload to transfer.sh" -a file name
     set name (echo $name | sed -e 's/-\{1,\}/-/g')
 
     if test -n "$file"
-        if test -r "$file"
+        if not test -r "$file"
             echo "transfer: can not read the file." > /dev/stderr
             return 1
         end
