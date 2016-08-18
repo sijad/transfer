@@ -21,7 +21,7 @@ function transfer -d "Upload to transfer.sh" -a file name
     if test -z $name
         if not isatty
             set name $file
-        else if test -r $file
+        else if test -n "$file"
             set name (basename $file)
         end
     end
@@ -37,8 +37,8 @@ function transfer -d "Upload to transfer.sh" -a file name
     set name (echo $name | sed -e 's/[^a-zA-Z0-9._-]/-/g')
     set name (echo $name | sed -e 's/-\{1,\}/-/g')
 
-    if test -n $file
-        if not test -r $file
+    if test -n "$file"
+        if test -r "$file"
             echo "transfer: can not read the file." > /dev/stderr
             return 1
         end
