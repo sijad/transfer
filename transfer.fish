@@ -2,6 +2,9 @@ function transfer -d "Upload to transfer.sh" -a file name
 
     getopts $argv | while read -l 1 2
         switch "$1"
+            case _
+                continue
+
             case h help
                 printf "Usage: transfer file name \n"
                 return
