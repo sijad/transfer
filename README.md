@@ -10,7 +10,7 @@ Upload to <https://transfer.sh>
 
 ## Install
 
-With [Fisherman](https://fisherman.github.io/)
+With [fisherman]
 
 ```
 fisher transfer
