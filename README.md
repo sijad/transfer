@@ -29,3 +29,7 @@ transfer my-file.txt my-file-new-name.txt
 ```fish
 echo my message text | transfer my-message.txt
 ```
+
+```fish
+cat my-file.txt | transfer my-file-new-name.txt
+```
