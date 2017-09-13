@@ -6,7 +6,13 @@ function transfer -d "Upload to transfer.sh" -a file name
                 continue
 
             case h help
-                printf "Usage: transfer file name \n"
+                echo "Usage: transfer [FILE] [NAME]"
+                echo
+                echo "Examples:"
+                echo "      transfer my-file.txt"
+                echo "      transfer my-file.txt my-file-new-name.txt"
+                echo "      echo my message text | transfer my-message.txt"
+                echo "      cat my-file.txt | transfer my-file-new-name.txt"
                 return
 
             case \*
