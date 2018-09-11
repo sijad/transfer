@@ -13,7 +13,7 @@ Upload to <https://transfer.sh>
 With [fisherman]
 
 ```
-fisher transfer
+fisher sijad/transfer
 ```
 
 ## Usage
