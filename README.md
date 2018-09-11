@@ -1,8 +1,4 @@
-[slack-link]: https://fisherman-wharf.herokuapp.com
-[slack-badge]: https://fisherman-wharf.herokuapp.com/badge.svg
-[fisherman]: https://github.com/fisherman/fisherman
-
-[![Slack Room][slack-badge]][slack-link]
+[fisher]: https://github.com/jorgebucaran/fisher
 
 # Transfer
 
@@ -10,7 +6,7 @@ Upload to <https://transfer.sh>
 
 ## Install
 
-With [fisherman]
+With [fisher]
 
 ```
 fisher sijad/transfer
