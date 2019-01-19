@@ -1,15 +1,13 @@
-[fisher]: https://github.com/jorgebucaran/fisher
-
 # Transfer
 
-Upload to <https://transfer.sh>
+Upload to <https://transfer.sh>.
 
 ## Install
 
-With [fisher]
+With [Fisher](https://github.com/jorgebucaran/fisher):
 
 ```
-fisher sijad/transfer
+fisher add sijad/transfer
 ```
 
 ## Usage
@@ -29,3 +27,7 @@ echo my message text | transfer my-message.txt
 ```fish
 cat my-file.txt | transfer my-file-new-name.txt
 ```
+
+## License
+
+Transfer is MIT licensed. See [LICENSE](LICENSE).
